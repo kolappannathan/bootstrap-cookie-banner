@@ -4,7 +4,7 @@ A cookie banner for websites using Bootstrap 4.
 
 ## Demo
 
-Live demo - [GitHub Page](https://kolappannathan.github.io/bootstrap-cookie-banner/)
+[![Live demo](https://img.shields.io/badge/view-Live%20Demo-blue.svg?style=flat-square&logo=microsoft%20edge)](https://kolappannathan.github.io/bootstrap-cookie-banner/)
 
 ## Usage
 
