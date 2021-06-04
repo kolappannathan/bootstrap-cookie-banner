@@ -1,12 +1,14 @@
 # Bootstrap cookie banner
 
-A cookie banner for websites using Bootstrap 4.
+A cookie banner for websites using Bootstrap 5.
 
 **Demo:** [![Live demo](https://img.shields.io/badge/view-Live%20Demo-blue.svg?style=flat-square&logo=microsoft%20edge)](https://kolappannathan.github.io/bootstrap-cookie-banner/)
 
+**Bootstrap Version used:** 5.0.1
+
 ## Usage
 
- 1. Include the css and js files.
+ 1. Include the CSS and js files.
  
 ```html
 <!-- Cookie Banner -->
@@ -20,14 +22,13 @@ A cookie banner for websites using Bootstrap 4.
 <div class="nk-cookie-banner alert alert-dark text-center mb-0" role="alert">
   &#x1F36A; This website uses cookies to ensure you get the best experience on our website.
   <a href="https://www.cookiesandyou.com/" target="blank">Learn more</a>
-  <button type="button" class="btn btn-primary btn-sm ml-3" onclick="window.nk_hideCookieBanner()">
+  <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.nk_hideCookieBanner()">
     I Got It
   </button>
 </div>
 <!-- End of Cookie Banner -->
 ```
 
-## Used in
+## Screenshot
 
- 1. [kolappan.dev](https://kolappan.dev/)
- ![Demo image](./demo/demo.jpg)
+![Demo image](./demo/demo.jpg)

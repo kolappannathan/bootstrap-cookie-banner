@@ -7,16 +7,10 @@
     <title>Bootstrap Cookie Banner</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"></script>
 
     <!-- Cookie Banner -->
@@ -25,81 +19,109 @@
   </head>
 
   <body>
-    <main class="container">
-      <h2>Bootstrap Cookie Banner</h2>
-      <br>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <span class="navbar-brand">
+          Bootstrap Cookie Banner
+          <span class="badge rounded-pill bg-primary">Demo</span></h1>
+        </span>
+      </div>
+    </nav>
+    <main class="container mt-3">
       <p>
-        Demo website for <a href="https://github.com/kolappannathan/bootstrap-cookie-banner">Bootstrap Cookie Banner</a>
-        <br>
-        If you don't see the cookie banner below, clear the localstorage.
+        Demo website for Bootstrap Cookie Banner. If you don't see the cookie banner below, clear the localstorage.
       </p>
+      <ul>
+        <li>
+          <a href="https://github.com/kolappannathan/bootstrap-cookie-banner" target="_blank">GitHub</a>
+        </li>
+        <li>
+          Bootstrap Version used: 5.0.1
+        </li>
+      </ul>
 
-      <h5>HTML Code</h5>
-      <code>
-          &lt;!-- Cookie Banner --&gt;<br>
-          &lt;div class="nk-cookie-banner alert alert-dark text-center mb-0" role="alert"&gt;<br>
-            &#x1F36A; This website uses cookies to ensure you get the best experience on our website.<br>
-            &lt;a href="https://www.cookiesandyou.com/" target="blank">Learn more&lt;/a&gt;<br>
-            &lt;button type="button" class="btn btn-primary btn-sm ml-3" onclick="window.nk_hideCookieAlert()"&gt;<br>
-              I Got It<br>
-              &lt;/button&gt;<br>
-            &lt;/div&gt;<br>
-          &lt;!-- End of Cookie Banner --&gt;<br>
-      </code>
-      <br>
-      <h5>CSS Code</h5>
-      <code>
-        .nk-cookie-banner {
-          position: fixed;
-          bottom: 0px;
-          left: 0px;
-          width: 100%;
-          z-index: 999;
-          border-radius: 0px;
-          display: none;
-        }
-      </code>
-      <br><br>
-      <h5>JS Code</h5>
-      <code>
-        /* Javascript to show and hide cookie banner using localstroage */
-        <br>/* Shows the Cookie banner */
-        <br>function showCookieBanner(){
-        <br>    let cookieBanner = document.getElementsByClassName("nk-cookie-banner")[0];
-        <br>  cookieBanner.style.display = "block";
-        <br>}
-        <br>/* Hides the Cookie banner and saves the value to localstorage */
-        <br>function hideCookieBanner(){
-        <br>localStorage.setItem("web_dev_isCookieAccepted", "yes");
-        <br>let cookieBanner = document.getElementsByClassName("nk-cookie-banner")[0];
-        <br>cookieBanner.style.display = "none";
-        <br>}
-        <br>/* Checks the localstorage and shows Cookie banner based on it. */
-        <br>function initializeCookieBanner(){
-        <br>let isCookieAccepted = localStorage.getItem("web_dev_isCookieAccepted");
-        <br>if(isCookieAccepted === null)
-        <br>{
-        <br>localStorage.clear();
-        <br>localStorage.setItem("web_dev_isCookieAccepted", "no");
-        <br>showCookieBanner();
-        <br>}
-        <br>if(isCookieAccepted === "no"){
-        <br>showCookieBanner();
-        <br>}
-        <br>}
-        <br>// Assigning values to window object
-        <br>window.onload = initializeCookieBanner();
-        <br>window.nk_hideCookieBanner = hideCookieBanner;
-      </code>
-
-      <br><br><br><br>
+      <h5>Code </h5>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="HTML-tab" data-bs-toggle="tab" data-bs-target="#HTML" type="button"
+            role="tab" aria-controls="HTML" aria-selected="true">HTML</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="css-tab" data-bs-toggle="tab" data-bs-target="#css" type="button" role="tab"
+            aria-controls="css" aria-selected="false">CSS</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="js-tab" data-bs-toggle="tab" data-bs-target="#js" type="button" role="tab"
+            aria-controls="js" aria-selected="false">Javascript</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="HTML" role="tabpanel" aria-labelledby="HTML-tab">
+          <code>
+            &lt;!-- Cookie Banner --&gt;<br>
+            &lt;div class="nk-cookie-banner alert alert-dark text-center mb-0" role="alert"&gt;<br>
+              &#x1F36A; This website uses cookies to ensure you get the best experience on our website.<br>
+              &lt;a href="https://www.cookiesandyou.com/" target="blank">Learn more&lt;/a&gt;<br>
+              &lt;button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.nk_hideCookieAlert()"&gt;<br>
+                I Got It<br>
+                &lt;/button&gt;<br>
+              &lt;/div&gt;<br>
+            &lt;!-- End of Cookie Banner --&gt;<br>
+        </code>
+        </div>
+        <div class="tab-pane fade" id="css" role="tabpanel" aria-labelledby="css-tab">
+          <code>
+            .nk-cookie-banner {
+              position: fixed;
+              bottom: 0px;
+              left: 0px;
+              width: 100%;
+              z-index: 999;
+              border-radius: 0px;
+              display: none;
+            }
+          </code>
+        </div>
+        <div class="tab-pane fade" id="js" role="tabpanel" aria-labelledby="js-tab">
+          <code>
+            /* Javascript to show and hide cookie banner using localstroage */
+            <br>/* Shows the Cookie banner */
+            <br>function showCookieBanner(){
+            <br>    let cookieBanner = document.getElementsByClassName("nk-cookie-banner")[0];
+            <br>  cookieBanner.style.display = "block";
+            <br>}
+            <br>/* Hides the Cookie banner and saves the value to localstorage */
+            <br>function hideCookieBanner(){
+            <br>localStorage.setItem("web_dev_isCookieAccepted", "yes");
+            <br>let cookieBanner = document.getElementsByClassName("nk-cookie-banner")[0];
+            <br>cookieBanner.style.display = "none";
+            <br>}
+            <br>/* Checks the localstorage and shows Cookie banner based on it. */
+            <br>function initializeCookieBanner(){
+            <br>let isCookieAccepted = localStorage.getItem("web_dev_isCookieAccepted");
+            <br>if(isCookieAccepted === null)
+            <br>{
+            <br>localStorage.clear();
+            <br>localStorage.setItem("web_dev_isCookieAccepted", "no");
+            <br>showCookieBanner();
+            <br>}
+            <br>if(isCookieAccepted === "no"){
+            <br>showCookieBanner();
+            <br>}
+            <br>}
+            <br>// Assigning values to window object
+            <br>window.onload = initializeCookieBanner();
+            <br>window.nk_hideCookieBanner = hideCookieBanner;
+          </code>
+        </div>
+      </div>
     </main>
 
     <!-- Cookie Banner -->
     <div class="nk-cookie-banner alert alert-dark text-center mb-0" role="alert">
       &#x1F36A; This website uses cookies to ensure you get the best experience on our website.
       <a href="https://www.cookiesandyou.com/" target="blank">Learn more</a>
-      <button type="button" class="btn btn-primary btn-sm ml-3" onclick="window.nk_hideCookieBanner()">
+      <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.nk_hideCookieBanner()">
         I Got It
       </button>
     </div>
