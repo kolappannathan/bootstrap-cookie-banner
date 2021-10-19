@@ -1,9 +1,9 @@
 .nk-cookie-banner {
     position: fixed;
-    bottom: 0px;
-    left: 0px;
+    bottom: 0;
+    left: 0;
     width: 100%;
     z-index: 999;
-    border-radius: 0px;
+    border-radius: 0;
     display: none;
   }
