@@ -1,5 +1,5 @@
 /*
-* Javascript to show and hide cookie banner using localstroage
+* Javascript to show and hide cookie banner using localstorage
 */
 
 /**
