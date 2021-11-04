@@ -6,8 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [2.2.0] - 2021-11-04
 ### Changed
- - Updated bootstrap to v5.1.3.
- - Updating meta viewport info.
+ - Updated bootstrap to v5.1.3. PR - [#4](https://github.com/kolappannathan/bootstrap-cookie-banner/pull/4) from [@Erulezz](https://github.com/Erulezz)
+ - Updating meta viewport info. PR - [#4](https://github.com/kolappannathan/bootstrap-cookie-banner/pull/4) from [@Erulezz](https://github.com/Erulezz)
 
 ### Contributors
  - [@Erulezz](https://github.com/Erulezz)
