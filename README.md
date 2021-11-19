@@ -19,10 +19,10 @@ A cookie banner for websites using Bootstrap 5.
 
 ```html
 <!-- Cookie Banner -->
-<div class="nk-cookie-banner alert alert-dark text-center mb-0" role="alert">
+<div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert">
   &#x1F36A; This website uses cookies to ensure you get the best experience on our website.
   <a href="https://www.cookiesandyou.com/" target="blank">Learn more</a>
-  <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.nk_hideCookieBanner()">
+  <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()">
     I Got It
   </button>
 </div>
