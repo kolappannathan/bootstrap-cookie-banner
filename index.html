@@ -84,23 +84,23 @@
             /* Javascript to show and hide cookie banner using localstorage */
             <br>/* Shows the Cookie banner */
             <br>function showCookieBanner(){
-            <br>&nbsp;let cookieBanner = document.getElementsByClassName("nk-cookie-banner")[0];
+            <br>&nbsp;let cookieBanner = document.getElementsByClassName("cb-cookie-banner")[0];
             <br>&nbsp;cookieBanner.style.display = "block";
             <br>}
             <br>
             <br>/* Hides the Cookie banner and saves the value to localstorage */
             <br>function hideCookieBanner(){
-            <br>&nbsp;localStorage.setItem("web_dev_isCookieAccepted", "yes");
-            <br>&nbsp;let cookieBanner = document.getElementsByClassName("nk-cookie-banner")[0];
+            <br>&nbsp;localStorage.setItem("cb_isCookieAccepted", "yes");
+            <br>&nbsp;let cookieBanner = document.getElementsByClassName("cb-cookie-banner")[0];
             <br>&nbsp;cookieBanner.style.display = "none";
             <br>}
             <br>
             <br>/* Checks the localstorage and shows Cookie banner based on it. */
             <br>function initializeCookieBanner(){
-            <br>&nbsp;let isCookieAccepted = localStorage.getItem("web_dev_isCookieAccepted");
+            <br>&nbsp;let isCookieAccepted = localStorage.getItem("cb_isCookieAccepted");
             <br>&nbsp;if(isCookieAccepted === null)
             <br>&nbsp;{
-            <br>&nbsp;&nbsp;localStorage.setItem("web_dev_isCookieAccepted", "no");
+            <br>&nbsp;&nbsp;localStorage.setItem("cb_isCookieAccepted", "no");
             <br>&nbsp;&nbsp;showCookieBanner();
             <br>&nbsp;}
             <br>&nbsp;if(isCookieAccepted === "no"){
@@ -110,17 +110,17 @@
             <br>
             <br>// Assigning values to window object
             <br>window.onload = initializeCookieBanner();
-            <br>window.nk_hideCookieBanner = hideCookieBanner;
+            <br>window.cb_hideCookieBanner = hideCookieBanner;
           </code>
         </div>
       </div>
     </main>
 
     <!-- Cookie Banner -->
-    <div class="nk-cookie-banner alert alert-dark text-center mb-0" role="alert">
+    <div class="cb-cookie-banner alert alert-dark text-center mb-0" role="alert">
       &#x1F36A; This website uses cookies to ensure you get the best experience on our website.
       <a href="https://www.cookiesandyou.com/" target="blank">Learn more</a>
-      <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.nk_hideCookieBanner()">
+      <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()">
         I Got It
       </button>
     </div>
