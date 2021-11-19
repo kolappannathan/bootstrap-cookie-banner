@@ -70,11 +70,11 @@
           <code>
             .nk-cookie-banner {
               position: fixed;
-              bottom: 0px;
-              left: 0px;
+              bottom: 0;
+              left: 0;
               width: 100%;
               z-index: 999;
-              border-radius: 0px;
+              border-radius: 0;
               display: none;
             }
           </code>
@@ -84,28 +84,30 @@
             /* Javascript to show and hide cookie banner using localstorage */
             <br>/* Shows the Cookie banner */
             <br>function showCookieBanner(){
-            <br>    let cookieBanner = document.getElementsByClassName("nk-cookie-banner")[0];
-            <br>  cookieBanner.style.display = "block";
+            <br>&nbsp;let cookieBanner = document.getElementsByClassName("nk-cookie-banner")[0];
+            <br>&nbsp;cookieBanner.style.display = "block";
             <br>}
+            <br>
             <br>/* Hides the Cookie banner and saves the value to localstorage */
             <br>function hideCookieBanner(){
-            <br>localStorage.setItem("web_dev_isCookieAccepted", "yes");
-            <br>let cookieBanner = document.getElementsByClassName("nk-cookie-banner")[0];
-            <br>cookieBanner.style.display = "none";
+            <br>&nbsp;localStorage.setItem("web_dev_isCookieAccepted", "yes");
+            <br>&nbsp;let cookieBanner = document.getElementsByClassName("nk-cookie-banner")[0];
+            <br>&nbsp;cookieBanner.style.display = "none";
             <br>}
+            <br>
             <br>/* Checks the localstorage and shows Cookie banner based on it. */
             <br>function initializeCookieBanner(){
-            <br>let isCookieAccepted = localStorage.getItem("web_dev_isCookieAccepted");
-            <br>if(isCookieAccepted === null)
-            <br>{
-            <br>localStorage.clear();
-            <br>localStorage.setItem("web_dev_isCookieAccepted", "no");
-            <br>showCookieBanner();
+            <br>&nbsp;let isCookieAccepted = localStorage.getItem("web_dev_isCookieAccepted");
+            <br>&nbsp;if(isCookieAccepted === null)
+            <br>&nbsp;{
+            <br>&nbsp;&nbsp;localStorage.setItem("web_dev_isCookieAccepted", "no");
+            <br>&nbsp;&nbsp;showCookieBanner();
+            <br>&nbsp;}
+            <br>&nbsp;if(isCookieAccepted === "no"){
+            <br>&nbsp;&nbsp;showCookieBanner();
+            <br>&nbsp;}
             <br>}
-            <br>if(isCookieAccepted === "no"){
-            <br>showCookieBanner();
-            <br>}
-            <br>}
+            <br>
             <br>// Assigning values to window object
             <br>window.onload = initializeCookieBanner();
             <br>window.nk_hideCookieBanner = hideCookieBanner;
