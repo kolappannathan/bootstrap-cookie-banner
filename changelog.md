@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.0] - 2021-11-19
+### Changed
+ - The CSS and the element identification now uses id instead of the 1st element of the class.
+ - Replaced the prefixes of my initials(`nk`) & `web_dev` with `cb`. `cb` stands for cookie banner.
+ - Local storage is no longer cleared if the cookie value is null.
+
 ## [2.2.0] - 2021-11-04
 ### Changed
  - Updated bootstrap to v5.1.3. PR - [#4](https://github.com/kolappannathan/bootstrap-cookie-banner/pull/4) from [@Erulezz](https://github.com/Erulezz)
