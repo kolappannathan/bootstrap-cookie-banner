@@ -6,7 +6,7 @@
  * @description Shows the cookie banner
  */
 function showCookieBanner(){
-    let cookieBanner = document.getElementsByClassName("cb-cookie-banner")[0];
+    let cookieBanner = document.getElementById("cb-cookie-banner");
     cookieBanner.style.display = "block";
 }
 
@@ -16,7 +16,7 @@ function showCookieBanner(){
 function hideCookieBanner(){
     localStorage.setItem("cb_isCookieAccepted", "yes");
 
-    let cookieBanner = document.getElementsByClassName("cb-cookie-banner")[0];
+    let cookieBanner = document.getElementById("cb-cookie-banner");
     cookieBanner.style.display = "none";
 }
 

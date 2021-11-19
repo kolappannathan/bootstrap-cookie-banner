@@ -56,7 +56,7 @@
         <div class="tab-pane fade show active" id="HTML" role="tabpanel" aria-labelledby="HTML-tab">
           <code>
             &lt;!-- Cookie Banner --&gt;<br>
-            &lt;div class="cb-cookie-banner alert alert-dark text-center mb-0" role="alert"&gt;<br>
+            &lt;div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert"&gt;<br>
               &#x1F36A; This website uses cookies to ensure you get the best experience on our website.<br>
               &lt;a href="https://www.cookiesandyou.com/" target="blank">Learn more&lt;/a&gt;<br>
               &lt;button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieAlert()"&gt;<br>
@@ -68,7 +68,7 @@
         </div>
         <div class="tab-pane fade" id="css" role="tabpanel" aria-labelledby="css-tab">
           <code>
-            .cb-cookie-banner {
+            #cb-cookie-banner {
               position: fixed;
               bottom: 0;
               left: 0;
@@ -84,14 +84,14 @@
             /* Javascript to show and hide cookie banner using localstorage */
             <br>/* Shows the Cookie banner */
             <br>function showCookieBanner(){
-            <br>&nbsp;let cookieBanner = document.getElementsByClassName("cb-cookie-banner")[0];
+            <br>&nbsp;let cookieBanner = document.getElementById("cb-cookie-banner");
             <br>&nbsp;cookieBanner.style.display = "block";
             <br>}
             <br>
             <br>/* Hides the Cookie banner and saves the value to localstorage */
             <br>function hideCookieBanner(){
             <br>&nbsp;localStorage.setItem("cb_isCookieAccepted", "yes");
-            <br>&nbsp;let cookieBanner = document.getElementsByClassName("cb-cookie-banner")[0];
+            <br>&nbsp;let cookieBanner = document.getElementById("cb-cookie-banner");
             <br>&nbsp;cookieBanner.style.display = "none";
             <br>}
             <br>
@@ -117,7 +117,7 @@
     </main>
 
     <!-- Cookie Banner -->
-    <div class="cb-cookie-banner alert alert-dark text-center mb-0" role="alert">
+    <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert">
       &#x1F36A; This website uses cookies to ensure you get the best experience on our website.
       <a href="https://www.cookiesandyou.com/" target="blank">Learn more</a>
       <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()">
