@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 ### Changed
- - Fixed an error in documentation ([Issue #9](https://github.com/kolappannathan/bootstrap-cookie-banner/issues/9)). Thanks to [@Ahleroy](https://github.com/Ahleroy)
+ - Fixed an error in documentation - [Issue #9](https://github.com/kolappannathan/bootstrap-cookie-banner/issues/9) raised by [@Ahleroy](https://github.com/Ahleroy)
 
 ## [3.0.0] - 2021-11-19
 ### Changed
