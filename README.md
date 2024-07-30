@@ -31,4 +31,10 @@ A cookie banner for websites using Bootstrap 5.
 
 ## Screenshot
 
-![Demo image](./demo/demo.jpg)
+*Light mode*
+
+![Demo image](./demo/light-mode.png)
+
+*Dark mode*
+
+![Demo image](./demo/dark-mode.png)

@@ -5,7 +5,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
+## [4.0.0] - 2024-07-30
 ### Changed
+ - Demo website now has auto dark and light mode. Screenshot of dark mdoe added to Readme.
+ - Updated bootstrap version to 5.3.3
  - Fixed an error in documentation - [Issue #9](https://github.com/kolappannathan/bootstrap-cookie-banner/issues/9) raised by [@Ahleroy](https://github.com/Ahleroy)
 
 ## [3.0.0] - 2021-11-19
